@@ -19,6 +19,9 @@ const Counter = () => {
   const handleTriple = () => {
     setCount(count * 3);
   };
+  const handleRevert=()=>{
+    setCount(0);
+  }
 
   return (
     <div>
@@ -32,6 +35,7 @@ const Counter = () => {
       <button style={buttonStyle} onClick={handleTriple}>
         3x
       </button>
+      <button style={buttonStyle} onClick={handleRevert}>Revert to 0</button>
     </div>
   );
 };
